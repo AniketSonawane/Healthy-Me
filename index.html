@@ -192,7 +192,7 @@ if(Age=="" || gender==""|| height2==""|| weight2==""){
                 bmr = 655.1 + (9.563 * weight) + (1.850 * height2) - (4.676 * Age)
             }
 
-            document.getElementById("Results2").innerHTML =Math.ceil(bmr) + "Calories/day"
+            document.getElementById("Results2").innerHTML = Math.round(bmr) + "Calories/day"
         }
     }
        
