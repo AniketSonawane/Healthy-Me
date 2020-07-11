@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="health.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Healthy Me</title>
+  </head>
+  <body>
+ <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> Healthy Me</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+           
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#main">BMI</a>
+                <a class="dropdown-item" href="#main">BMR</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+       
+        </div>
+    </nav>
+
+ </div>
+
+   <section id="Coursel">
+
+    <div id="carouselExampleControls" class= "carousel-fade carousel slide" data-ride="carousel col-lg-12 col-md-6 ">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="1000" >
+            <img  class=" c-img"src="images/h2.png"  alt="Health1">
+            <div class="carousel-caption  ">
+                <h5 class="ta">What Is BMI ,Why Is It Neccessary To Know</h5>
+            <p class="ta">Body Mass Index (BMI) is a measurement of a person’s weight with respect to his or her height. It is more of an indicator than a direct measurement of a person’s total body fat.</p>
+            
+              </div>
+           
+          </div>
+          <div class="carousel-item" data-interval="1000" >
+            <img class=" c-img" src="images/h3.jpg"  alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                
+            <!-- <p>Body Mass Index (BMI) is a measurement of a person’s weight with respect to his or her height. It is more of an indicator than a direct measurement of a person’s total body fat.</p> -->
+            
+              </div>
+          </div>
+          <div class="carousel-item " data-interval="1000" >
+            <img class=" c-img" src="images/h5.jpg"  alt="...">
+            <div class="carousel-caption ta float-right ">
+                <h5 class="ta ">What Is BMR ,Why Is It Neccessary To Know</h5>
+            <p class="ta">Basal Metabolic Rate is the number of calories required to keep your body functioning at rest. BMR is also known as your body’s metabolism;</p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
+   </section>
+
+   <!-- HEALTH CALCULATOR -->
+   <section id=main>
+<div class="row">
+    <div class="card text-center col-lg-6 col-md-6">
+        <div class="card-header">
+          BMI
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Calculate BMI Here</h5>
+          <p class="card-text">Enter The Height In "cm" & Weight in kg.</p><br>
+          <input type=" text " placeholder="Enter Height."id="height1"><br><br>
+          <input type=" text " placeholder="Enter Weight."id="weight1"><br>
+          <br>
+          <div class="">
+            <button class="btn  btn-lg bg-primary " type="submit" onclick="bmi()">
+                Check</button><br><br>
+                <h6 id="Results">Results Will Apear here</h6>
+          </div>
+          
+
+        </div>
+        <div class="card-footer cardf">
+            Body Mass Ratio
+          </div>
+      
+        </div>
+        <div class="card text-center col-lg-6 col-md-6 BMR">
+            <div class="card-header ch">
+              BMR
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Calculate BMR Here</h5>
+              <p class="card-text">Enter The Height In "cm" & Weight in kg.</p><br>
+              <input type="radio" name="gender" id="gender" value="masc1"><i>Male</i><br><br>
+              <input type="radio" name="gender" id="gender" value="fem"> <i>Female</i>  <br><br>
+              <input type=" text " placeholder="Enter Age." id="Age" value=""><br><br>
+              <input type=" number " placeholder="Enter Height." id="height2"><br><br>
+              <input type=" number " placeholder="Enter Weight." id="weight2"><br>
+              <br><br>
+              <button class="btn  btn-lg  bg-primary download-button btn-n" type="submit" onclick="bmr()">
+                Check</button>
+            </div>
+            <div > <h6 id="Results2">Results Will Apear here</h6>
+    
+    
+            </div>
+            <div class="card-footer">
+                Basal Metabolic Ratio
+              </div>
+             
+      </div>
+      </div>
+      
+   </section>
+   <script>
+         function bmi() {
+            var bmi;
+            var bmiw = document.getElementById("weight1").value;
+            var bmih = document.getElementById("height1").value;
+            
+            bmi = bmiw / (bmih/100 * bmih/100);
+           
+            if (bmiw === "" || bmih === "") {
+                document.getElementById("Results").innerHTML = "Please fill all details"
+            } else {
+                if (bmi < 18) {
+                    document.getElementById("Results").innerHTML = Math.ceil(bmi) + " Your BMI is low"
+                } else if (bmi >= 18 && bmi < 25) {
+                    document.getElementById("Results").innerHTML = Math.ceil(bmi) + " Your BMI is normal"
+                } else if (bmi >=25 && bmi <=29){
+                    document.getElementById("Results").innerHTML = Math.ceil(bmi) + " Your BMI is high"
+
+                }
+                else if(bmi > 30){
+                    document.getElementById("Results").innerHTML = Math.ceil(bmi) + " Your BMI is Obese"
+
+                }
+            }
+        }
+        
+        function bmr() {
+            var bmr;
+            var Age = document.getElementById("Age").value;
+            var gender = document.getElementById("gender").value;
+            var height2 = document.getElementById("height2").value;
+            var weight2 = document.getElementById("weight2").value;
+if(Age=="" || gender==""|| height2==""|| weight2==""){
+    document.getElementById("Results2").innerHTML = "Please Enter All The Details"
+}
+           else {
+           if (gender == "masc1") {
+                bmr = 66.5 + (13.75 * weight2) + (5.003 * height2) - (6.755 * Age)
+            } else {
+                bmr = 655.1 + (9.563 * weight) + (1.850 * height2) - (4.676 * Age)
+            }
+
+            document.getElementById("Results2").innerHTML = bmr
+        }
+    }
+       
+   </script>
+   <section>
+       <div class="Converter"> <h1>Need A Converter?</h1>
+        <a href="https://www.rapidtables.com/convert/length/height-converter.html"><h2>Height Converter</h2></a>
+        <br><br>
+        <p>© Copyright 2020 , <i>Aniket Ashok Ulka Sonawane </i> ,All Rights Reserved.
+        </p>
+       
+        <i class="far fa-heart"> Made With Love From India</i> <i class="far fa-heart"></i><br>
+       
+    </div>
+      
+   </section>
+  
+   </body>
+  </body>
+</html>
